@@ -1,22 +1,47 @@
 body {
-    background-color: #1a1a1a;
-    color: #00ff41;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: #121212;
+    color: #00ffae;
+    font-family: 'Consolas', 'Menlo', monospace;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
 }
 
-canvas {
-    background-color: #333;
-    border: 2px solid #00ff41;
+.container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#game-area {
+    border: 3px solid #00ffae;
+    box-shadow: 0 0 20px #00ffae;
+}
+
+#analysis-area {
+    width: 300px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 1px solid #00ffae;
+    padding-bottom: 10px;
 }
 
 #status {
-    margin-bottom: 1em;
-    font-size: 1.2em;
-    min-height: 1.5em;
+    font-size: 1.1em;
+    height: 40px;
+}
+
+#commentary-box {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #151515;
+    min-height: 100px;
+    border-left: 3px solid #00ffae;
 }
