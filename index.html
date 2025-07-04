@@ -2,17 +2,24 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersjakk med Gemini</title>
+    <title>Cybersjakk v2.0</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cybersjakk-analyse</h1>
-    <div id="status">Laster inn...</div>
-    <canvas id="chess-board" width="512" height="512"></canvas>
+    <div class="container">
+        <div id="game-area">
+            <canvas id="chess-board" width="600" height="600"></canvas>
+        </div>
+        <div id="analysis-area">
+            <h2>KI-Analyse</h2>
+            <div id="status">Velg en brikke for å starte.</div>
+            <div id="commentary-box">
+                <p id="commentary">Geminis kommentarer vil vises her...</p>
+            </div>
+        </div>
+    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
-    
     <script src="script.js"></script>
 </body>
 </html>
